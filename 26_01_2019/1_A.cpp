@@ -22,3 +22,19 @@ int main()
     cout << zajedno(a) << endl;
     return 0;
 }
+
+
+//drugi nacin rada zdatka bez funkcija
+	int main()
+    {
+        int a, b = 0;
+        do
+        {
+            cin >> a;
+            if (a >0 && a < 9)
+            {
+                b = b * 10 + a;
+            }
+        } while (a > 0 && a < 9);
+        cout << b;
+    }

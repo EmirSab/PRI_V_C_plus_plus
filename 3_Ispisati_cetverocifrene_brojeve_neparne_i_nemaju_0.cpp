@@ -13,7 +13,7 @@
 		//cout << treci << endl;
 		cetvrti = i / 1000 % 10;
 		//cout << cetvrti << endl;
-		if ((prvi != 0 && prvi % 2 == 0) && (drugi != 0 && drugi % 2 == 0) && (treci != 0 && treci % 2 == 0) && (cetvrti != 0 && cetvrti % 2 == 0))
+		if ((prvi != 0 && prvi % 2 != 0) && (drugi != 0 && drugi % 2 != 0) && (treci != 0 && treci % 2 != 0) && (cetvrti != 0 && cetvrti % 2 != 0))
 		{
 			cout << prvi << drugi << treci << cetvrti << endl;
 		}
