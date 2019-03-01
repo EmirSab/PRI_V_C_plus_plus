@@ -2,28 +2,29 @@
 
 int main()
 {
-    double x, rezultat;
-	cin >> x;
+   double x, rezultat = 0;
 	char unos;
+	cout << "Unesite realan broj" << endl;
+	cin >> x;
+	cout << "Za funkciju sinusa unesite s a cosinusa c" << endl;
 	do
 	{
 		cin >> unos;
-		if (unos == 's')
+	} while (unos != 's' && unos != 'c');
+
+	if (unos == 's')
+	{
+		for (int i = 1; i <= x; i++)
 		{
-			for (int i = 1; i <= x; i++)
-			{
-				rezultat = i / (sin(x / i) + x);
-			}
-			
+			rezultat += i / (sin(x / i) + x);
 		}
-		else
+	}
+	else
+	{
+		for (int i = 1; i <= x; i++)
 		{
-			for (int i = 1; i <= x; i++)
-			{
-				rezultat = i / (cos(x / i) + x);
-			}
-			
+			rezultat += i / (cos(x / i) + x);
 		}
-	} while (unos != 'c' && unos != 's');
+	}
 	cout << rezultat << endl;
 }
